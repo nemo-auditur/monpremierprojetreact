@@ -1,5 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+
+//Import components
+import Component1 from "./Components/Component1";
+import Component2 from "./Components/Component2";
 
 function App() {
   return (
@@ -9,6 +13,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>Hello world</p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,6 +22,8 @@ function App() {
         >
           Learn React
         </a>
+        <Component1 />
+        <Component2 maPremiereProps="Une props" />
       </header>
     </div>
   );
